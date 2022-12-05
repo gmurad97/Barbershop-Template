@@ -1,4 +1,79 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap");
 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
-/*font-family: 'PT Sans Narrow', sans-serif;*/
+body{
+    margin: 0px auto;
+    padding: 0px;
+    background-color: #000000;
+    background-image: url("../img/background/main-background.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    padding: 0px 100px;
+    margin-bottom: 55px;
+}
+
+.menu > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu > ul > li{
+    display: flex;
+}
+
+.menu > ul > li > a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    white-space: pre;
+    color: #FFFFFF;
+    padding: 25px 20px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.menu > ul > li > a:hover{
+    background-color: #202020;
+}
+
+.login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.login > a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left: 15px;
+    padding: 25px 20px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.login > a:hover{
+    background-color: #202020;
+}
+
+.fa-custom-modify{
+    font-size: 20px;
+    color: #404040;
+}
