@@ -36,6 +36,23 @@ body{
 
 .menu > ul > li{
     display: flex;
+    position: relative;
+}
+
+.menu > ul > li::before{
+    content: "";
+    position: absolute;
+    right: 20px;
+    left: 20px;
+    bottom: 0px;
+    height: 5px;
+    opacity: 0;
+    background-color: #FFFFFF;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.menu > ul > li:first-child::before, .menu > ul > li:hover::before{
+    opacity: 1;
 }
 
 .menu > ul > li > a{
@@ -76,4 +93,92 @@ body{
 .fa-custom-modify{
     font-size: 20px;
     color: #404040;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.info-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+
+.info-card-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-card-block > h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.r-square{
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+}
+
+.info-card-block > p{
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 0px 25px;
+}
+
+.info-card-block:nth-child(1), .info-card-block:nth-child(2){
+    margin-right: 25px;
+}
+
+.news-gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/decorate/block-texture.png");
+    padding: 50px 80px;
+    margin-bottom: 25px;
+}
+
+.contacts-signup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/decorate/block-texture.png");
+    padding: 50px 80px;
+}
+
+.footer{
+    background-image: url("../img/decorate/footer-texture.png");
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
 }
